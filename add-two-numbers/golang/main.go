@@ -36,6 +36,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	return sol
 }
 
+// This is boilerplate to be able to test locally
 func main() {
 	// Test case: [2,4,3] + [5,6,4] = [7,0,8]
 	// Represents 342 + 465 = 807
