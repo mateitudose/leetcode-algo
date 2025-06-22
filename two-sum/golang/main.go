@@ -5,14 +5,14 @@ import "fmt"
 func twoSum(nums []int, target int) []int {
 	indexOf := make(map[int]int)
 	for index, num := range nums {
-		val, present := indexOf[target - num]
-        // Fun fact: () are optional for ifs in Go!
-        if present {
-            return []int{val, index}
-        }
-        indexOf[num] = index
+		val, present := indexOf[target-num]
+		// Fun fact: () are optional for ifs in Go!
+		if present {
+			return []int{val, index}
+		}
+		indexOf[num] = index
 	}
-    return []int{}
+	return []int{}
 }
 
 // This is boilerplate to be able to test locally in VS Code
